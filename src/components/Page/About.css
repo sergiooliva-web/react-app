@@ -1,0 +1,33 @@
+.container {
+    scroll-snap-type: x mandatory;
+}
+
+.child {
+    scroll-snap-align: start;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.gallery {
+    height: 400px;
+    width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.gallery Image {
+    height: 100%;
+    width: 100%;
+    flex-shrink: 0;
+
+    object-fit: cover;
+
+    position: sticky;
+    top: 0;
+}

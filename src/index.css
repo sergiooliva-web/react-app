@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.Link:hover {
+  color: rgba(255, 255, 255, 0.945);
+}
+
+.Link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.button {
+  float: right;
+}
+
+.cart {
+  margin-right: 14%;
+  margin-bottom: -30%;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(39, 38, 38);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  opacity: 0.5;
+}
+
+.IMG {
+  background-image: url("1.png");
+  /* The image used - important! */
+  background-size: cover;
+  position: relative;
+  /* Needed to position the cutout text in the middle of the image */
+  height: 300px;
+  /* Some height */
+}
+
+.text {
+  opacity: 0.6;
+  background-color: white;
+  color: black;
+  font-size: 10vw;
+  /* Responsive font size */
+  font-weight: bold;
+  margin: 0 auto;
+  /* Center the text container */
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  /* Center text */
+  position: absolute;
+  /* Position text */
+  top: 50%;
+  /* Position text in the middle */
+  left: 50%;
+  /* Position text in the middle */
+  transform: translate(-50%, -50%);
+  /* Position text in the middle */
+  mix-blend-mode: screen;
+  /* This makes the cutout text possible */
+}
